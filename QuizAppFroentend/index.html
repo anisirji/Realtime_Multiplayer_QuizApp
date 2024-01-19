@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Live Quiz Platform</title>
+  </head>
+  <body>
+    <img src="./images/img.png" width="130px" alt="" srcset="" />
+    <div id="quiz-container">
+      <div id="question-container">
+        <h2 id="question" class="question"></h2>
+        <div id="options" class="options"></div>
+        <div class="btn"><button onclick="submitAnswer()">Next ></button></div>
+      </div>
+      <div id="leaderboard-container">
+        <h2 class="result">Leaderboard</h2>
+        <ol id="leaderboard"></ol>
+      </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.0.0/socket.io.js"></script>
+    <script src="quiz.js"></script>
+  </body>
+</html>
