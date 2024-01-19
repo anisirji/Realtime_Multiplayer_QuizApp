@@ -2,6 +2,10 @@
 
 This is a simple multiplayer quiz game built with Socket.IO and Express. Users can connect, answer quiz questions, and compete in real time. The application features a leaderboard that updates after each submitted answer.
 
+## Deployed
+
+- [realtime-quiz-app.netlify.app](https://realtime-quiz-app.netlify.app)
+
 ## Features
 
 - **Real-time Multiplayer Quiz:**
@@ -14,18 +18,24 @@ This is a simple multiplayer quiz game built with Socket.IO and Express. Users c
 ## Setup
 
 1. **Install Dependencies:**
+
    ```bash
    npm install
 
+   ```
+
 2. **Run the Server:**
+
    ```bash
    npm start
+
+   ```
 
 3. **Access the App:**
    - Open the folder QuizAppFroentend then open index.html in any browser to access the quiz app.
 
-
 ## Usage
+
 - Connect to the Quiz:
 
 - Open the app in multiple browser tabs or devices.
@@ -43,14 +53,16 @@ The Multiplayer Quiz App is built using the following technologies:
 
 - **Node.js:**
   - The server-side environment for running JavaScript code.
-  
 - **Express:**
+
   - A minimal and flexible Node.js web application framework used for building the server.
 
 - **Socket.IO:**
+
   - A library that enables real-time, bidirectional, and event-based communication between the server and clients using WebSockets.
 
 - **HTML/CSS/JavaScript:**
+
   - Front-end components and user interface are developed using these core web technologies.
 
 - **GitHub:**
@@ -60,16 +72,15 @@ The Multiplayer Quiz App is built using the following technologies:
 
 - **Express:**
   - A web application framework for Node.js.
-  
 - **socket.io:**
   - Enables real-time communication between clients and the server.
-  
 - **nodemon:**
   - Monitors for any changes in your source and automatically restarts the server.
 
-
 ## Contributing
+
 - If you'd like to contribute to developing this quiz app, feel free to fork the repository and submit pull requests.
 
 ## License
+
 - This quiz app is open-source and available under the MIT License.

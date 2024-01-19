@@ -1,31 +1,29 @@
+/* Import fonts from Google Fonts */
 @import url("https://fonts.googleapis.com/css2?family=Nunito:wght@700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
+/* Global Styles */
 body {
-  font-family: "Nunito", sans-serif;
-  font-family: "Poppins", sans-serif;
+  font-family: "Nunito", sans-serif, "Poppins", sans-serif; /* Combine font families */
   padding: 20px;
   font-weight: normal;
   background-color: #cce2c2;
-  animation: fadeIn 1s ease-in-out; /* Add fade-in animation to body */
+  animation: fadeIn 1s ease-in-out;
 }
 
+/* Containers */
 #quiz-container {
   display: flex;
   justify-content: space-between;
-  animation: fadeIn 1s ease-in-out; /* Add fade-in animation to quiz container */
 }
 
-#question-container {
-  flex: 1;
-  animation: fadeIn 1s ease-in-out; /* Add fade-in animation to question container */
-}
-
+#question-container,
 #leaderboard-container {
   flex: 1;
   margin-left: 20px;
-  animation: fadeIn 1s ease-in-out; /* Add fade-in animation to leaderboard container */
+  animation: fadeIn 1s ease-in-out;
 }
 
+/* Buttons */
 button {
   margin: 10px 0px auto auto;
   color: rgb(229, 243, 230);
@@ -38,7 +36,7 @@ button {
   outline: none;
   cursor: pointer;
   transition: all 0.2s;
-  animation: fadeIn 1s ease-in-out; /* Add fade-in animation to buttons */
+  animation: fadeIn 1s ease-in-out;
 }
 
 button:hover {
@@ -51,6 +49,7 @@ button:active {
   transform: scale(0.9);
 }
 
+/* Question Styles */
 .question {
   background-color: rgba(245, 245, 245, 0.658);
   width: 60vw;
@@ -60,12 +59,13 @@ button:active {
   align-items: center;
   font-weight: 500;
   border-radius: 10px;
-  animation: fadeIn 1s ease-in-out; /* Add fade-in animation to questions */
+  animation: fadeIn 1s ease-in-out;
 }
 
+/* Options Styles */
 .options {
   background-color: rgba(245, 245, 245, 0.582);
-  width: 60wv;
+  width: 60vw;
   padding: 10px;
   border-radius: 10px;
   font-weight: 500;
@@ -73,7 +73,7 @@ button:active {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  animation: fadeIn 1s ease-in-out; /* Add fade-in animation to options */
+  animation: fadeIn 1s ease-in-out;
 }
 
 .opt {
@@ -86,7 +86,7 @@ button:active {
   border-width: 0.5px;
   border: solid rgba(217, 217, 217, 1);
   transition: all 0.2s;
-  animation: fadeIn 1s ease-in-out; /* Add fade-in animation to options */
+  animation: fadeIn 1s ease-in-out;
 }
 
 .opt:hover {
@@ -95,28 +95,35 @@ button:active {
   cursor: pointer;
 }
 
+/* Button Container */
 .btn {
   display: flex;
   align-items: center;
   justify-content: end;
-  animation: fadeIn 1s ease-in-out; /* Add fade-in animation to buttons */
+  animation: fadeIn 1s ease-in-out;
 }
 
+/* Leaderboard Styles */
 .score {
   padding: 10px;
   margin: 2px;
   width: fit-content;
   animation: fadeIn 1s;
 }
+
+/* Leaderboard Item Colors */
 .Y {
   background-color: rgba(254, 195, 61, 1);
 }
+
 .G {
   background-color: rgba(1, 171, 8, 1);
 }
+
 .R {
   background-color: rgb(254, 61, 61);
 }
+
 /* Keyframes for the fadeIn animation */
 @keyframes fadeIn {
   from {
